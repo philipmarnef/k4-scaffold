@@ -1,0 +1,16 @@
+type: writer
+label:
+  en: Text
+  nl: Tekst
+  fr: Texte
+toolbar:
+  inline: true
+  marks:
+    - bold
+    - italic
+    - "|"
+    - link
+    - email
+    - "|"
+    - clear
+  nodes: false

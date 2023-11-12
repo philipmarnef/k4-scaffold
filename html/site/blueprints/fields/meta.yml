@@ -1,0 +1,18 @@
+type: group
+fields:
+  author:
+    label: 
+      en: Author
+      nl: Auteur
+      fr: Auteur
+    type: users
+    multiple: false
+    required: true
+  created:
+    label: 
+      en: Creation date
+      nl: Aanmaakdatum
+      fr: Date de créatino
+    type: date
+    default: today
+    required: true

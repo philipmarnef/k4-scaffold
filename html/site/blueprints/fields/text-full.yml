@@ -1,0 +1,19 @@
+type: writer
+label:
+  nl: Tekst
+  en: Text
+  fr: Texte
+toolbar:
+  inline: false
+  marks:
+    - bold
+    - italic
+    - "|"
+    - link
+    - email
+    - "|"
+    - clear
+help:
+  en: This field uses <a href="https://getkirby.com/docs/guide/content/text-formatting#markdown" target="_blank">Markdown</a> and <a href="https://getkirby.com/docs/guide/content/text-formatting#kirbytext" target="_blank">KirbyTags</a> to format text
+  nl: Dit veld gebruikt <a href="https://getkirby.com/docs/guide/content/text-formatting#markdown" target="_blank">Markdown</a> en <a href="https://getkirby.com/docs/guide/content/text-formatting#kirbytext" target="_blank">KirbyTags</a> om tekst op te maken
+  fr: Ce champ utilise <a href="https://getkirby.com/docs/guide/content/text-formatting#markdown" target="_blank" rel="noopener">Markdown</a> et <a href="https://getkirby.com/docs/guide/content/text-formatting#kirbytext" target="_blank" rel="noopener">KirbyTags</a> pour formater le texte.
