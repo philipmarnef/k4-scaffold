@@ -38,6 +38,6 @@
     "webpack-stream": "^7.0.0"
   },
   "browserslist": [
-    "cover 99.5% in BE"
+    "cover 99.5% in BE, not dead, not op_mini all"
   ]
 }
