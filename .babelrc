@@ -4,7 +4,7 @@
       "@babel/preset-env",
       { 
         "targets": {
-          "browsers": "> 2%"
+          "browsers": "> 2% in BE, not dead, not op_mini all"
         }
       }
     ]
