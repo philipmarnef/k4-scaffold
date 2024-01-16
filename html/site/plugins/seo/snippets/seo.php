@@ -23,6 +23,8 @@ elseif ($site->seo_description()->isNotEmpty())
 	$description = $site->seo_description()->smartypants();
 }
 
+$locale = $kirby->language()?->locale() ?? 'en_GB';
+
 // we can override de share image in a controller if necessary
 if(isset($seo) && isset($seo['image']))
 {
@@ -50,7 +52,7 @@ else
 <?= Html::tag('meta', null, ["property" => "og:url", "content" => $metaurl]).PHP_EOL ?>
 <?php if(isset($image)) print Html::tag('meta', null, ["property" => "og:image", "content" => $image ]).PHP_EOL ?>
 <?php if(isset($description)) print Html::tag('meta', null, ["property" => "og:description", "content" => $description]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["property" => "og:locale", "content" => $kirby->language()?->locale() ?? 'en_GB']).PHP_EOL ?>
+<?= Html::tag('meta', null, ["property" => "og:locale", "content" => $locale]).PHP_EOL ?>
 
 <?= Html::tag('meta', null, ["name" => "twitter:title", "content" => $title]).PHP_EOL ?>
 <?= Html::tag('meta', null, ["name" => "twitter:card", "content" => 'large_summary']).PHP_EOL ?>
