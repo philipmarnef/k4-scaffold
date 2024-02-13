@@ -1,4 +1,4 @@
-import del                from    'del';
+import {deleteAsync}      from    'del';
 import gulp               from    'gulp';
 import imagemin           from    'gulp-imagemin';
 import sourcemaps         from    'gulp-sourcemaps';
@@ -22,7 +22,7 @@ let postcssPlugins = [
 ];
 
 export function clean () {
-  return del([
+  return deleteAsync([
     './html/public/assets/css/*', 
     './html/public/assets/js/*', 
     './html/public/assets/maps/*'
@@ -30,7 +30,7 @@ export function clean () {
 }
 
 function cleanImages () {
-  return del('./html/public/assets/images/*');
+  return deleteAsync('./html/public/assets/images/*');
 }
 
 function imageMin () {
