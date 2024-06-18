@@ -2,6 +2,7 @@
 .cache
 .env
 .license
+node_modules
 content
 storage
 public/media
