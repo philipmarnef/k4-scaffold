@@ -50,7 +50,7 @@ npm run serve
 
 This will start a proxy server with browsersync at `localhost:3000`, refreshing the browser page on file changes.
 
-See `gulpfile.esm.js` for details.
+See `gulpfile.js` for details.
 
 ### Build for production
 
