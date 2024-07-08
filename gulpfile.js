@@ -34,7 +34,7 @@ function cleanImages () {
 }
 
 function imageMin () {
-  return gulp.src('./src/images/*')
+  return gulp.src('./src/images/*', { encoding: false })
     .pipe(imagemin())
     .pipe(gulp.dest('./html/public/assets/images'));
 }
