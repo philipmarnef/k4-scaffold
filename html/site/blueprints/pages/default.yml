@@ -22,16 +22,9 @@ tabs:
             fields:
               text:
                 extends: fields/text-full
-    # column
-      meta:
-        width: 1/3
-        sections:
-        # section
-          meta:
-            type: fields
-            fields:
-              meta:
-                extends: fields/meta
 
 # tab
   media: tabs/media
+
+# tab
+  media: tabs/meta
