@@ -30,6 +30,13 @@ echo "Your production site domain is ${production}, updating html/site/snippets/
 # set robots directive in head.php
 sed -i '' "s,k4-scaffold.test,${production},g" html/site/snippets/head.php
 
+# update package.json
+sed -i '' "s,\"k4-scaffold\",\"${production}\",g" package.json
+sed -i '' "s,https://github.com/philipmarnef/k4-scaffold,,g" package.json
+sed -i '' "s,ISC,UNLICENSED,g" package.json
+# remove package-lock.json
+rm package-lock.json
+
 # install node modules
 echo "Installing node modules"
 npm install
