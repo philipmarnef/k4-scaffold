@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "505c79c0f4ed3c5d21a023c4cefa8677",
+    "content-hash": "5716bed74181b0c3799de69041e304ae",
     "packages": [
         {
             "name": "bnomei/kirby3-fingerprint",
@@ -282,6 +282,63 @@
                 }
             ],
             "time": "2024-09-19T14:15:21+00:00"
+        },
+        {
+            "name": "fabianmichael/kirby-markdown-field",
+            "version": "3.0.0-alpha.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
+                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/800fe5241abf85bd7309e982cdf0d4deea0b79ec",
+                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^9",
+                "vimeo/psalm": "^5.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "markdown-field",
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                },
+                {
+                    "name": "Fabian Michael",
+                    "email": "hallo@fabianmichael.de"
+                }
+            ],
+            "description": "Super-sophisticated markdown editor for Kirby 4",
+            "homepage": "https://github.com/fabianmichael/kirby-markdown-field",
+            "support": {
+                "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
+                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/3.0.0-alpha.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabianmichael",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-30T09:05:03+00:00"
         },
         {
             "name": "filp/whoops",
@@ -1365,7 +1422,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "getkirby/cms": 10
+        "getkirby/cms": 10,
+        "fabianmichael/kirby-markdown-field": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,
