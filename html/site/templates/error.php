@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="<?= $kirby->languageCode() ?? 'en' ?>">
-<?= snippet('head') ?>
+<?php snippet('html', slots: true) ?>
 
-<body>
-	<h1><?= $page->title() ?></h1>
-	<?= $page->text() ?>
-	<p></p>
-</body>
+	<?php	slot('body') ?>
+		<body>
+			<h1><?= $page->title() ?></h1>
+			<?= $page->text()->kt() ?>
+		</body>
+	<?php	endslot() ?>
 
-</html>
+<?php	endsnippet() ?>
